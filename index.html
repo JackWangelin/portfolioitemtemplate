@@ -67,40 +67,44 @@
 <!-- End Overview § -->    
     
 <!-- Carousel Example Section -->
-    
-    <div class="row altsec">
+    <div class="row">
         <div class="col-lg-12 col-md-12">
             <h2>Carousel Example Section</h2>
         </div>
 <!-- Carousel Section -->
-    <div class="container">
-       <div id="carousel-example" class="carousel slide" data-ride="carousel">
-  <!-- Indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
-            <li data-target="#carousel-example" data-slide-to="1"></li>
-            <li data-target="#carousel-example" data-slide-to="2"></li>
-          </ol>
+   
+           <div id="carousel-example" class="carousel slide container" data-ride="carousel">
 
-  <!-- Wrapper for slides -->
-  <div class="carousel-inner" role="listbox">
-    <div class="item active">
-      <img src="Images/genericsketches.jpg" alt="...">
-      <div class="carousel-caption">
-        ...
-      </div>
-    </div>
-    <div class="item">
-      <img src="Images/genericwhiteboard.jpg" alt="...">
-      <div class="carousel-caption">
-        ...
-      </div>
-    </div>
-    ...
-  </div>
+<!-- Indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#carousel-example" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example" data-slide-to="1"></li>
+                <li data-target="#carousel-example" data-slide-to="2"></li>
+              </ol>
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example" role="button" data-slide="prev">
+<!-- Wrapper for slides -->
+          <div class="carousel-inner" role="listbox">
+            <div class="item active">
+              <img class="img-responsive" src="Images/genericsketches.jpg" alt="...">
+              <div class="carousel-caption">
+                <!-- Captions Here -->
+              </div>
+            </div>
+            <div class="item">
+              <img class="img-responsive" src="Images/genericwhiteboard.jpg" alt="...">
+          <div class="carousel-caption">
+                <!-- Captions Here -->
+              </div>
+              </div>
+            <div class="item">
+              <img class="img-responsive" src="Images/makingpostits.jpg" alt="...">
+              <div class="carousel-caption">
+                <!-- Captions Here -->
+              </div>
+            </div>
+
+    <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example" role="button" data-slide="prev">
     <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
     <span class="sr-only">Previous</span>
   </a>
@@ -108,10 +112,11 @@
     <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
     <span class="sr-only">Next</span>
   </a>
+            </div>
+        </div>
     </div>
-</div>        
-<!-- Carousel End -->
     
+<!-- Carousel End -->
     <div class="row"> 
         <div class="col-lg-12 col-md-12">
             <h3>This is stuff!</h3>
@@ -133,7 +138,6 @@
                 <a name="3images"></a>
             </div>
         </div>
-    </div>
 
 <!-- End Carousel Exemplar § -->
     
@@ -205,17 +209,17 @@
 
     <div class="row altsec">
         <div class="col-lg-12 col-md-12">
-        
-        <h2>Special Use Image Cases</h2>
+            <h2>Special Use Image Cases</h2>
         </div>
         <div class="col-lg-12 col-md-12">
-        <h3>Rounded Images</h3>
-        <p>But we're not there yet, so we don't need to worry about it. Be so very light. Be a gentle whisper. Any little thing can be your friend if you let it be. If what you're doing doesn't make you happy - you're doing the wrong thing. You can do anything here. So don't worry about it.</p>
+            <h3>Rounded Images</h3>
+            <p>But we're not there yet, so we don't need to worry about it. Be so very light. Be a gentle whisper. Any little thing can be your friend if you let it be. If what you're doing doesn't make you happy - you're doing the wrong thing. You can do anything here. So don't worry about it.</p>
 
-        <p>We have no limits to our world. We're only limited by our imagination. There isn't a rule. You just practice and find out which way works best for you. Let's put some highlights on these little trees. The sun wouldn't forget them.</p>
+            <p>We have no limits to our world. We're only limited by our imagination. There isn't a rule. You just practice and find out which way works best for you. Let's put some highlights on these little trees. The sun wouldn't forget them.</p>
 
-        <p>Isn't it fantastic that you can change your mind and create all these happy things? A happy cloud. You have freedom here. The only guide is your heart. See there how easy that is. We don't really know where this goes - and I'm not sure we really care. Think about a cloud. Just float around and be there.</p>
+            <p>Isn't it fantastic that you can change your mind and create all these happy things? A happy cloud. You have freedom here. The only guide is your heart. See there how easy that is. We don't really know where this goes - and I'm not sure we really care. Think about a cloud. Just float around and be there.</p>  
         </div>
+        
         <div class="col-lg-4 col-md-4">
         <h3>A Mid-Level Title</h3>
         <p>No worries. No cares. Just float and wait for the wind to blow you around. Don't be bashful drop me a line. We must be quiet, soft and gentle. Isn't it great to do something you can't fail at?</p>
@@ -244,7 +248,6 @@
                 </div>
                 <a name="ShinyThings"></a>
             </div>
-            
         </div>
     </div>
     
@@ -302,11 +305,11 @@
             </div>
         </div>
     </div>
+<!-- End iTile § -->
+  
 </div>
 
-<!-- End iTile § -->
-    
-<!Footer>    
+<!-- Footer -->    
     <footer>
         <div class="navbar navbar-default navbar-fixed-bottom">
             <p class="text-center">Made by Jack & Sam</p>
@@ -322,6 +325,7 @@
     <script>$(function(){
     $('.carousel-example').carousel();
 });</script>
+
 </body>
 
 </html>
