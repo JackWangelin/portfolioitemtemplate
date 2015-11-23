@@ -1,0 +1,11 @@
+body { 
+    padding-bottom: 70px; 
+    }
+
+.overlay {
+    padding-bottom: 15px;
+    position:absolute;
+    bottom:0;
+    z-index: 9000;
+    background-color: rgba(0, 204, 255, .3)
+        }
