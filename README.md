@@ -6,4 +6,3 @@
     - not all bs.js libs called properly. Corrected.
 - [ ] Section w/ half image & half text
 - [x] Annotate code thoroughly
-- [ ] Update README.md
