@@ -1,11 +1,16 @@
 body { 
+    padding-top: 70px;
     padding-bottom: 70px; 
-    }
+        }
 
 .overlay {
     padding-bottom: 15px;
     position:absolute;
     bottom:0;
-    z-index: 9000;
-    background-color: rgba(0, 204, 255, .3)
+    z-index: 1000;
+    background-color: rgba(0, 204, 255, .3);
+        }
+
+.altsec {
+    background-color:rgba(160, 160, 160, .2);
         }
