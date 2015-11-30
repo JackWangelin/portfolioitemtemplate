@@ -26,17 +26,21 @@
 
 <body>
 
-<!-- NavBar -->    
+<!-- NavBar affixed to top of window
+    *NB: navbar is not setup to collapse to menu on small viewports. Refer to http://getbootstrap.com/components/#navbar for more info -->    
   
 <nav class="navbar navbar-default navbar-fixed-top ">
     <div class="container" style="padding-top:5px;">
         <div class="navbar-header">
             <ul class="nav nav-pills">
-               <li role="presentation" class="active"><a href="#Overview">Overview</a></li>
+<!-- Navbar Sections 
+    Copy list item to add section *create anchor name 1st -->               
+                <li role="presentation" class=""><a href="#Overview">Overview</a></li>
                 <li role="presentation"><a href="#Carousel">Carousel Example</a></li>
                 <li role="presentation"><a href="#3images"> 3 Across Images</a></li>
                 <li role="presentation"><a href="#SpecialUse"> Special Use Images</a></li>
                 <li role="presentation"><a href="#ShinyThings"> Tiled Images</a></li>
+<!-- End Navbar Sections -->                
             </ul>
         </div>
     </div>
@@ -50,8 +54,14 @@
 <!-- Overview Section -->
     <div class="row">
         <div class="col-lg-12 col-md-12">
+
+<!-- Section Anchor Tag -->            
             <a name="Overview"></a>
+
+<!-- Hero Image: remember to edit -->            
             <img alt="Hero Image Alt Text" src="Images/Hero%20Image.jpg" class="img-responsive">
+
+<!-- Title Overlay on Hero Image -->            
             <div class="overlay col-lg-12 col-md-12">
             <h1 style="color:white;">This is a Title</h1>
                 <a name="Overview"></a>
@@ -61,18 +71,24 @@
                 <p style="color:white;">Results</p>
                 
             </div>
+<!-- End Title Overlay -->
+            
         </div>
+        
+<!-- §2 Anchor Tag -->        
         <a name="Carousel"></a>
     </div>
 <!-- End Overview § -->    
     
 <!-- Carousel Example Section -->
-    <div class="row">
+<!-- Class, "altsec" gives grey background to seperate sections -->    
+    <div class="row altsec">
         <div class="col-lg-12 col-md-12">
             <h2>Carousel Example Section</h2>
         </div>
-<!-- Carousel Section -->
-   
+        
+<!-- Carousel Component 
+    Refer to: http://getbootstrap.com/javascript/#carousel for more info on Indicators & Controls -->
            <div id="carousel-example" class="carousel slide container" data-ride="carousel">
 
 <!-- Indicators -->
@@ -84,22 +100,34 @@
 
 <!-- Wrapper for slides -->
           <div class="carousel-inner" role="listbox">
-            <div class="item active">
+
+<!-- First Carousel item -->              
+          <div class="item active">
+              
+<!-- Edit image here *NB: ensure that images are the same height or page content will jump on transition -->              
               <img class="img-responsive" src="Images/genericsketches.jpg" alt="...">
               <div class="carousel-caption">
-                <!-- Captions Here -->
+
+<!-- 1st Caroousel Item Captions Here -->
+                  <p></p>
               </div>
             </div>
+              
+<!-- To add additional carousel item copy between comments -->              
             <div class="item">
               <img class="img-responsive" src="Images/genericwhiteboard.jpg" alt="...">
           <div class="carousel-caption">
                 <!-- Captions Here -->
+                <p></p>
               </div>
               </div>
+<!-- End carousel item -->              
+              
             <div class="item">
               <img class="img-responsive" src="Images/makingpostits.jpg" alt="...">
               <div class="carousel-caption">
                 <!-- Captions Here -->
+                  <p></p>
               </div>
             </div>
 
@@ -115,8 +143,8 @@
             </div>
         </div>
     </div>
-    
 <!-- Carousel End -->
+
     <div class="row"> 
         <div class="col-lg-12 col-md-12">
             <h3>This is stuff!</h3>
@@ -135,14 +163,14 @@
                 <p>We have no limits to our world. We're only limited by our imagination. There isn't a rule. You just practice and find out which way works best for you. Let's put some highlights on these little trees. The sun wouldn't forget them.</p>
 
                 <p>Isn't it fantastic that you can change your mind and create all these happy things? A happy cloud. You have freedom here. The only guide is your heart. See there how easy that is. We don't really know where this goes - and I'm not sure we really care. Think about a cloud. Just float around and be there.</p>
+
+<!-- §3 Anchor Tag -->            
                 <a name="3images"></a>
             </div>
         </div>
-
 <!-- End Carousel Exemplar § -->
     
 <!-- 3 Image Section Layout -->
-
     <div class="row">
         <div class="col-lg-12 col-md-12">
         <h2>3 Image Section Layout Example</h2>
@@ -156,10 +184,16 @@
 
         <p>We have no limits to our world. We're only limited by our imagination. There isn't a rule. You just practice and find out which way works best for you. Let's put some highlights on these little trees. The sun wouldn't forget them.</p>
         </div>
+        
+<!-- 3 evenly spaced images -->         
         <div class="col-lg-12 col-md-12">
         <div class="row">
             <div class="col-lg-4">
+                
+<!-- Edit Image -->                
                 <img src="Images/Sky3.1.jpg" alt="" class="img-responsive">
+                
+<!-- 1st Image Caption -->                
                 <div class="caption text-center">
                     <p class="small">This...</p>
                 </div>
@@ -176,6 +210,8 @@
                     <p class="small">Panorama.</p>
                 </div>
             </div>
+<!-- End 3 across images -->
+            
             <div class="col-lg-8 col-md-8">
                 <h3>Panoramas are Cool</h3>
                 <p>We're not trying to teach you a thing to copy. We're just here to teach you a technique, then let you loose into the world. We artists are a different breed of people. We're a happy bunch. God gave you this gift of imagination. Use it. Let's go up in here, and start having some fun Follow the lay of the land. It's most important.</p>
@@ -200,13 +236,15 @@
             </div>
         </div>
         </div>
+        
+<!-- §4 anchor tag -->        
         <a name="SpecialUse"></a>
     </div>
     
 <!-- End 3i § -->    
 
 <!-- Special Use Images -->
-
+<!-- Class, "altsec" gives grey background to seperate sections -->
     <div class="row altsec">
         <div class="col-lg-12 col-md-12">
             <h2>Special Use Image Cases</h2>
@@ -232,9 +270,12 @@
 
         <p>Isn't it fantastic that you can change your mind and create all these happy things? A happy cloud. You have freedom here. The only guide is your heart. See there how easy that is. We don't really know where this goes - and I'm not sure we really care. Think about a cloud. Just float around and be there.</p>
         </div>
+        
+<!-- Round images, aligned 2/3rds right -->        
         <div class="col-lg-8 col-md-8">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
+<!-- img class "img-cirle" rounds images; "img-responive" fits images inside divs. -->
                     <img class="img-responsive img-circle center-block" alt="" src="Images/SOCrop.png">
                 <div class="caption text-center">
                     <p class="small">A Man</p>
@@ -251,9 +292,11 @@
         </div>
     </div>
     
-<!-- End Special Use -->
+<!-- End Special Use § -->
 
-<!-- Images Tile Section -->
+<!-- Images Tile Section 
+This section is tricky as it is very dependent upon images used. 
+-->
 
     <div class="row">
         <div class="col-lg-12 col-md-12">
@@ -309,7 +352,7 @@
   
 </div>
 
-<!-- Footer -->    
+<!-- Footer affixed to bottom of window-->    
     <footer>
         <div class="navbar navbar-default navbar-fixed-bottom">
             <p class="text-center">Made by Jack & Sam</p>
